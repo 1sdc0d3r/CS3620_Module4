@@ -1,5 +1,6 @@
-{% extends "store/base.html" %} {% block title %}All Products{% endblock %} {%
-block content %}
+{% extends "store/base.html" %} {% block title %}All Products{% endblock %}
+<br />
+{% block content %}
 <ul>
   {% for product in products %}
   <li>{{ product.name }}</li>

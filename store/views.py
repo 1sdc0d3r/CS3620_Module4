@@ -7,9 +7,9 @@ from .models import Product
 # Create your views here.
 
 def index(request):
-    products = Product.objects.all().order_by("-rating")
+    products = Product.objects.all().order_by("-name")
 
-    return render(request, "book_outlet/index.html", {
+    return render(request, "store/index.html", {
         "products": products
     })
 

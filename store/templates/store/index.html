@@ -1,0 +1,12 @@
+{% extends "store/base.html" %} {% block title %}All Products{% endblock %} {%
+block content %}
+<ul>
+  {% for product in products %}
+  <li>{{ product.name }}</li>
+  <!-- <li>
+    <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>
+    ({{ book.rating }})
+  </li> -->
+  {% endfor %}
+</ul>
+{% endblock %}

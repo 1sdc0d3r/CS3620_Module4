@@ -24,8 +24,8 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
 
-    tagss = models.ManyToManyField(Tag)
-    categoryy = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, related_name='products')
+    tags = models.ManyToManyField(Tag)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, related_name='products')
 
     def __str__(self):
         return self.name

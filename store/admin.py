@@ -6,7 +6,7 @@ class inlineTagModel(admin.StackedInline): # or TabularInline
     extra = 1
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ("categoryy",)
+    list_display = ("category",)
     # inlines = [inlineTagModel]
 
 

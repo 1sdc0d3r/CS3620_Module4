@@ -36,6 +36,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='tags',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, related_name='tags', to='store.tag'),
+            field=models.ManyToManyField(null=True, related_name='tags', to='store.tag'),
         ),
     ]
